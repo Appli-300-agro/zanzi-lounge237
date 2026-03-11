@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "zanzi-lounge237",
+    "site": "zanzi-lounge237-t51pd",
     "public": "dist",
     "ignore": [
       "firebase.json",
