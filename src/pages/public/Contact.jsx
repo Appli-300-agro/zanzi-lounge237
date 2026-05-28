@@ -9,9 +9,9 @@ const Contact = () => {
       {/* Header */}
       <section className="bg-primary py-20 text-white text-center">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-heading font-bold mb-4">Contactez Zanzi Lounge</h1>
+          <h1 className="text-4xl font-heading font-bold mb-4">Contactez Zanzibar Resort</h1>
           <p className="text-primary-light max-w-xl mx-auto">
-            Une réservation ? Une commande pour emporter ? Notre équipe est à votre écoute pour vous offrir une expérience unique à Bastos.
+            Une réservation de chambre ? Un événement à organiser ? Notre équipe est à votre disposition 24h/24 à Bonamoussadi.
           </p>
         </div>
       </section>
@@ -27,7 +27,7 @@ const Contact = () => {
               <div>
                 <h3 className="font-bold text-secondary-dark mb-1">Téléphone & WhatsApp</h3>
                 <p className="text-sm text-secondary">+237 690 58 20 49</p>
-                <p className="text-xs text-primary font-medium mt-1">Tous les jours : 11h00 - 02h00</p>
+                <p className="text-xs text-primary font-medium mt-1">Ouvert 24h/24 - 7j/7</p>
               </div>
             </div>
 
@@ -37,7 +37,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-bold text-secondary-dark mb-1">Email</h3>
-                <p className="text-sm text-secondary">contact@zanzilounge.com</p>
+                <p className="text-sm text-secondary">contact@zanzibar-resort.com</p>
               </div>
             </div>
 
@@ -48,8 +48,8 @@ const Contact = () => {
               <div>
                 <h3 className="font-bold text-secondary-dark mb-1">Adresse</h3>
                 <p className="text-sm text-secondary leading-relaxed">
-                  Yaoundé, Bastos<br />
-                  Face Ambassade du Japon<br />
+                  Bonamoussadi, Douala<br />
+                  Face Station TotalEnergies 2<br />
                   Cameroun
                 </p>
               </div>
@@ -70,14 +70,14 @@ const Contact = () => {
               </div>
               <div className="md:col-span-2 space-y-1">
                 <label className="text-xs font-bold text-secondary uppercase">Sujet</label>
-                <Input placeholder="De quoi s'agit-il ?" required />
+                <Input placeholder="Objet de votre demande (Réservation, Devis, etc.)" required />
               </div>
               <div className="md:col-span-2 space-y-1">
                 <label className="text-xs font-bold text-secondary uppercase">Message</label>
                 <textarea 
                   rows="5" 
                   className="w-full border rounded-lg p-3 text-sm focus:ring-2 focus:ring-primary focus:outline-none border-slate-200"
-                  placeholder="Décrivez votre besoin..."
+                  placeholder="Dites-nous comment nous pouvons vous aider..."
                   required
                 ></textarea>
               </div>
@@ -95,7 +95,7 @@ const Contact = () => {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="bg-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-2 border border-slate-200">
                 <MapPin className="text-primary w-5 h-5" />
-                <span className="font-bold text-sm">Retrouvez-nous à Bastos</span>
+                <span className="font-bold text-sm">Retrouvez-nous à Bonamoussadi</span>
             </div>
         </div>
         <img 

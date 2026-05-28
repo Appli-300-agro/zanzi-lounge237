@@ -118,28 +118,28 @@ const Home = () => {
 
   const slides = [
     {
-      title: <>L'Expérience <br /> <span className="text-primary-light italic">Zanzibar Resort</span></>,
-      subtitle: "Le hotspot incontournable de Bastos. Plongez dans un univers de luxe tropical mêlant piscine, restaurant et lounge.",
-      cta1: { label: "Explorer le Resort", link: "/catalogue", icon: true },
+      title: <>Votre Resort à <br /> <span className="text-primary-light italic">Bonamoussadi</span></>,
+      subtitle: "L'all-in-one spot incontournable de Douala. Hôtel, Restaurant, Piscine et Divertissement face à TotalEnergies 2.",
+      cta1: { label: "Découvrir le Resort", link: "/catalogue", icon: true },
       cta2: { label: "Réservations", link: "/contact" },
-      icon: "🌴",
-      iconLabel: "Tropical Luxury"
+      icon: "🏨",
+      iconLabel: "Hôtel & Loisirs"
     },
     {
-      title: <>Détente au <br /> <span className="text-primary-light italic">Bord de l'Eau</span></>,
-      subtitle: "Savourez nos cocktails signatures et grillades d'exception sur nos cabanas. Le cadre idéal pour vos pool parties.",
-      cta1: { label: "Nos Services", link: "/catalogue", icon: false },
+      title: <>Détente & <br /> <span className="text-primary-light italic">Divertissement</span></>,
+      subtitle: "Piscine, Billard et Tennis de table. Le cadre idéal pour vos moments de relaxation en famille ou entre amis.",
+      cta1: { label: "Nos Activités", link: "/catalogue", icon: false },
       cta2: { label: "Nos Secteurs", link: "#secteurs", action: scrollToSectors },
-      icon: "🏊‍♂️",
-      iconLabel: "Pool & Grill"
+      icon: "🎱",
+      iconLabel: "Fun & Chill"
     },
     {
-      title: <>Soirées & <br /> <span className="text-primary-light italic">Vibes VIP</span></>,
-      subtitle: "DJ sets, Musique live et ambiance feutrée sous les néons. Vivez les nuits les plus exclusives de Yaoundé.",
-      cta1: { label: "Le Menu", link: "/catalogue", icon: true },
+      title: <>Événements d' <br /> <span className="text-primary-light italic">Exception</span></>,
+      subtitle: "Mariages, anniversaires ou séminaires. Notre salle de fête et notre service traiteur subliment vos célébrations.",
+      cta1: { label: "Espace Event", link: "/catalogue", icon: true },
       cta2: { label: "WhatsApp", link: "https://wa.me/237690582049" },
-      icon: "✨",
-      iconLabel: "Nuits de Bastos"
+      icon: "🎊",
+      iconLabel: "Salles & Banquets"
     }
   ];
 

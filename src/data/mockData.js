@@ -33,7 +33,7 @@ const generateProducts = () => {
     products.push({
       id: `prod-${i}`,
       name: productName,
-      description: `Découvrez notre service ${dishBaseName}, une expérience de la catégorie ${sector} proposée par Zanzibar Resort à Bastos.`,
+      description: `Profitez d'un service d'exception 24h/24 avec notre ${dishBaseName}, une spécialité ${sector.toLowerCase()} au Zanzibar Resort de Bonamoussadi.`,
       price: 5000 + (Math.floor(Math.random() * 50) * 1000),
       category: sector,
       imageUrl: `${imageUrl}?auto=format&fit=crop&q=80&w=800`,

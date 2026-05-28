@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <h3 className="text-white text-lg font-heading font-bold mb-4">Zanzi Lounge</h3>
+          <h3 className="text-white text-lg font-heading font-bold mb-4">Zanzibar Resort</h3>
           <p className="text-sm leading-relaxed text-slate-400">
-            L'excellence culinaire et l'ambiance lounge au cœur de Bastos. Votre destination de choix à Yaoundé pour des moments d'exception.
+            Votre complexe hôtelier et de loisirs à Douala. Restaurant, Barbecue, Piscine, Billard et Chambres de standing au cœur de Bonamoussadi.
           </p>
         </div>
 
@@ -38,9 +38,9 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-medium mb-4">Contact</h4>
           <ul className="space-y-2 text-sm text-slate-400">
-            <li>Yaoundé, Bastos</li>
-            <li>Face Ambassade du Japon</li>
-            <li>contact@zanzilounge.com</li>
+            <li>Douala, Bonamoussadi</li>
+            <li>Face Station TotalEnergies 2</li>
+            <li>Ouvert 24h/24 - 7j/7</li>
             <li>+237 690 58 20 49</li>
           </ul>
         </div>
@@ -50,8 +50,8 @@ const Footer = () => {
           <h4 className="text-white font-medium mb-4">Suivez-nous</h4>
           <div className="flex gap-4">
              <a href="https://wa.me/237690582049" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><MessageCircle className="w-5 h-5" /></a>
-             <a href="https://www.facebook.com/profile.php?id=61556093150530" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
-             <a href="https://www.tiktok.com/@zanzilounge237" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.06 3.43-.3 6.83-1.39 10.12-1.14 3.48-3.41 6.44-7.32 7.15-3.45.71-7.41-.44-9.44-3.3-2.32-3.44-1.49-8.58 1.82-11.3 1.15-.99 2.59-1.56 4.03-1.77V11.2c-1.31.13-2.7.48-3.57 1.6-.63.96-.88 2.12-.83 3.29.19 3.71 4.77 5.23 6.9 2.32.58-.8.69-1.84.67-2.84-.03-3.23-.03-6.46-.03-9.69.02-1.93.01-3.85.01-5.78z"/></svg></a>
+             <a href="https://www.facebook.com/profile.php?id=61585128660088" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
+             <a href="https://www.tiktok.com/@zanzibarresort" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.06 3.43-.3 6.83-1.39 10.12-1.14 3.48-3.41 6.44-7.32 7.15-3.45.71-7.41-.44-9.44-3.3-2.32-3.44-1.49-8.58 1.82-11.3 1.15-.99 2.59-1.56 4.03-1.77V11.2c-1.31.13-2.7.48-3.57 1.6-.63.96-.88 2.12-.83 3.29.19 3.71 4.77 5.23 6.9 2.32.58-.8.69-1.84.67-2.84-.03-3.23-.03-6.46-.03-9.69.02-1.93.01-3.85.01-5.78z"/></svg></a>
           </div>
         </div>
       </div>
