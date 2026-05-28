@@ -2,17 +2,17 @@
 // Images sélectionnées pour leur haute qualité et leur pertinence
 
 const CATEGORY_IMAGES = {
-  'Plats Signatures': ['https://images.unsplash.com/photo-1504674900247-0877df9cc836','https://images.unsplash.com/photo-1555939594-58d7cb561ad1','https://images.unsplash.com/photo-1604329760661-e71dc83f8f26'],
-  'Entrées': ['https://images.unsplash.com/photo-1512621776951-a57141f2eefd','https://images.unsplash.com/photo-1540189549336-e6e99c3679fe','https://images.unsplash.com/photo-1546069901-ba9599a7e63c'],
-  'Boissons': ['https://images.unsplash.com/photo-1544145945-f90425340c7e','https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd','https://images.unsplash.com/photo-1497515114629-f71d768fd07c'],
-  'Desserts': ['https://images.unsplash.com/photo-1563729784474-d77dbb933a9e','https://images.unsplash.com/photo-1551024601-bec78aea704b','https://images.unsplash.com/photo-1565958011703-44f9829ba187']
+  'Spécialités Locales': ['https://images.unsplash.com/photo-1544025162-d76694265947','https://images.unsplash.com/photo-1504674900247-0877df9cc836','https://images.unsplash.com/photo-1604329760661-e71dc83f8f26'],
+  'Grillades & Barbecue': ['https://images.unsplash.com/photo-1555939594-58d7cb561ad1','https://images.unsplash.com/photo-1529193591184-b1d58069ecdd','https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b'],
+  'Cocktails & Mixologie': ['https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b','https://images.unsplash.com/photo-1536935338213-d2c20e9fe9d6','https://images.unsplash.com/photo-1497515114629-f71d768fd07c'],
+  'Entrées & Tapas': ['https://images.unsplash.com/photo-1512621776951-a57141f2eefd','https://images.unsplash.com/photo-1540189549336-e6e99c3679fe','https://images.unsplash.com/photo-1546069901-ba9599a7e63c']
 };
 
 const DISH_NAMES = {
-  'Plats Signatures': ['Ndolé Crevettes & Viande', 'Poulet DG Royal', 'Eru & Garri', 'Koki au Piment Douceur', 'Sanga Traditionnel', 'DG de Poisson Braisé'],
-  'Entrées': ['Salade de Fruits de Mer', 'Accras de Morue croustillants', 'Pastels à la viande', 'Nems Exotiques'],
-  'Boissons': ['Jus de Bissap Maison', 'Foléré Gingembre Frais', 'Jus de Baobab Onctueux', 'Punch Exotique'],
-  'Desserts': ['Beignets Haricot Tradition', 'Gateau à la Banane Plantain', 'Mousse de Mangue', 'Tarte Coco']
+  'Spécialités Locales': ['Ndolé Royal au Poisson Fumée', 'Eru & Garri Prestige', 'Sanga Traditionnel', 'Poisson Braisé du Jour', 'Poulet DG Royal'],
+  'Grillades & Barbecue': ['Brochettes de Bœuf épicées', 'Saucisses Grillées Maison', 'Ailerons de Poulet BBQ', 'Côtelettes de Porc Braisées'],
+  'Cocktails & Mixologie': ['Zanzi Signature Cocktail', 'Mojito Classique', 'Pina Colada Fraîche', 'Jus de Bissap Glacé'],
+  'Entrées & Tapas': ['Accras de Morue croustillants', 'Nems au Poulet', 'Salade de Saison', 'Planche de Charcuterie']
 };
 const sectorKeys = Object.keys(DISH_NAMES);
 
@@ -29,12 +29,12 @@ const generateProducts = () => {
     products.push({
       id: `prod-${i}`,
       name: productName,
-      description: `Découvrez notre ${dishBaseName}, une solution de la catégorie ${sector} proposée par zanzi.lounge237. Qualité garantie.`,
-      price: 2500 + (Math.floor(Math.random() * 15) * 500),
+      description: `Vivez une explosion de saveurs avec notre ${dishBaseName}, une spécialité de la catégorie ${sector} préparée avec passion par le chef de Zanzi Lounge.`,
+      price: 3500 + (Math.floor(Math.random() * 20) * 500),
       category: sector,
       imageUrl: `${imageUrl}?auto=format&fit=crop&q=80&w=800`,
       stock: Math.floor(Math.random() * 50) + 10,
-      featured: i % 8 === 0
+      featured: i % 10 === 0
     });
   }
   return products;

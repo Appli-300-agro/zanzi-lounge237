@@ -118,28 +118,28 @@ const Home = () => {
 
   const slides = [
     {
-      title: <>L'art de la <br /> <span className="text-primary-light italic">Gastronomie</span></>,
-      subtitle: "Gastronomie, Saveurs Authentiques et Service d'Excellence. La référence premium pour les pros et particuliers au Cameroun.",
-      cta1: { label: "Catalogue", link: "/catalogue", icon: true },
-      cta2: { label: "Expertise", link: "/contact" },
-      icon: "☀️",
-      iconLabel: "Solutions Solaires"
+      title: <>L'Expérience <br /> <span className="text-primary-light italic">Zanzibar Resort</span></>,
+      subtitle: "Le hotspot incontournable de Bastos. Plongez dans un univers de luxe tropical mêlant piscine, restaurant et lounge.",
+      cta1: { label: "Explorer le Resort", link: "/catalogue", icon: true },
+      cta2: { label: "Réservations", link: "/contact" },
+      icon: "🌴",
+      iconLabel: "Tropical Luxury"
     },
     {
-      title: <>Votre Partenaire <br /> <span className="text-primary-light italic">Stratégique</span></>,
-      subtitle: "zanzi.lounge237 accompagne le développement industriel et domestique avec des solutions innovantes et durables.",
-      cta1: { label: "À Propos", link: "/a-propos", icon: false },
+      title: <>Détente au <br /> <span className="text-primary-light italic">Bord de l'Eau</span></>,
+      subtitle: "Savourez nos cocktails signatures et grillades d'exception sur nos cabanas. Le cadre idéal pour vos pool parties.",
+      cta1: { label: "Nos Services", link: "/catalogue", icon: false },
       cta2: { label: "Nos Secteurs", link: "#secteurs", action: scrollToSectors },
-      icon: "🏢",
-      iconLabel: "Expertise Pro"
+      icon: "🏊‍♂️",
+      iconLabel: "Pool & Grill"
     },
     {
-      title: <>Une Équipe <br /> <span className="text-primary-light italic">Dédiée</span></>,
-      subtitle: "Besoin d'un devis personnalisé ou d'une assistance technique ? Nos experts vous répondent sous 24h.",
-      cta1: { label: "Contact", link: "/contact", icon: true },
-      cta2: { label: "WhatsApp", link: "https://wa.me/237600000000" },
-      icon: "📞",
-      iconLabel: "Support 24/7"
+      title: <>Soirées & <br /> <span className="text-primary-light italic">Vibes VIP</span></>,
+      subtitle: "DJ sets, Musique live et ambiance feutrée sous les néons. Vivez les nuits les plus exclusives de Yaoundé.",
+      cta1: { label: "Le Menu", link: "/catalogue", icon: true },
+      cta2: { label: "WhatsApp", link: "https://wa.me/237690582049" },
+      icon: "✨",
+      iconLabel: "Nuits de Bastos"
     }
   ];
 
@@ -161,6 +161,10 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center overflow-hidden text-white bg-secondary-dark">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-bg.jpg" alt="Zanzi Lounge Background" className="w-full h-full object-cover opacity-50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-secondary-dark/60 via-secondary-dark/40 to-secondary-dark/60" />
+        </div>
         <ParticlesBackground />
         
         <div className="container mx-auto px-4 relative z-10 py-12 md:py-20">
@@ -260,19 +264,19 @@ const Home = () => {
       <AnimatedSection className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureCard 
-            icon={Truck} 
-            title="Service Express" 
-            description="Une expérience culinaire livrée chez vous ou à savourer sur place. avec calcul en temps réel."
-          />
-          <FeatureCard 
             icon={ShieldCheck} 
-            title="Paiement Sécurisé" 
-            description="Transactions certifiées via MoMo, OM ou Carte Bancaire. Sécurité maximale."
+            title="Cadre Sécurisé" 
+            description="Profitez de votre soirée en toute sérénité avec notre service de sécurité discret et notre parking surveillé."
           />
           <FeatureCard 
             icon={Clock} 
-            title="Support Premium" 
-            description="Une équipe dédiée et un assistant IA disponible 24/7 pour vos besoins techniques."
+            title="Service Premium" 
+            description="Une équipe attentive et professionnelle pour un service à table irréprochable jusqu'au bout de la nuit."
+          />
+          <FeatureCard 
+            icon={LayoutDashboard} 
+            title="Ambiance Lounge" 
+            description="Le cadre idéal à Bastos pour vos afterworks, soirées privées ou moments de détente chic."
           />
         </div>
       </AnimatedSection>
@@ -281,11 +285,11 @@ const Home = () => {
       <AnimatedSection className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
             <div className="space-y-4">
-                <h2 className="text-5xl font-heading font-bold text-secondary-dark tracking-tighter">Sélection Vedette</h2>
-                <p className="text-secondary text-lg font-light">Le meilleur de l'innovation technologique et du confort.</p>
+                <h2 className="text-5xl font-heading font-bold text-secondary-dark tracking-tighter">Nos Vedettes</h2>
+                <p className="text-secondary text-lg font-light">Une sélection des plats et cocktails les plus appréciés.</p>
             </div>
             <Link to="/catalogue" className="group flex items-center text-primary font-bold text-lg hover:text-primary/80 transition-colors">
-                Voir toute la collection 
+                Voir toute la carte 
                 <div className="ml-3 p-2 bg-primary/5 rounded-full group-hover:bg-primary/10 transition-colors">
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -310,16 +314,16 @@ const Home = () => {
             <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 space-y-4">
                 <h2 className="text-3xl md:text-5xl font-heading font-bold text-secondary-dark tracking-tighter uppercase">Notre Carte</h2>
                 <div className="h-1 w-16 md:h-1.5 md:w-20 bg-primary mx-auto rounded-full" />
-                <p className="text-secondary text-lg md:text-xl font-light pt-4 px-4">L'art de la gastronomie et du service d'exception.</p>
+                <p className="text-secondary text-lg md:text-xl font-light pt-4 px-4">L'art de la gastronomie et du service lounge à Yaoundé.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
                 {CATEGORIES.map((cat, idx) => {
                     const themes = {
-                        'Plats Signatures': { icon: "🥘", color: "from-orange-400 to-red-500" },
-                        'Entrées': { icon: "🥗", color: "from-green-400 to-emerald-600" },
-                        'Boissons': { icon: "🍷", color: "from-blue-400 to-indigo-600" },
-                        'Desserts': { icon: "🍰", color: "from-pink-400 to-rose-500" }
+                        'Spécialités Locales': { icon: "🥘", color: "from-orange-400 to-red-500" },
+                        'Grillades & Barbecue': { icon: "🔥", color: "from-red-400 to-rose-600" },
+                        'Cocktails & Mixologie': { icon: "🍸", color: "from-blue-400 to-indigo-600" },
+                        'Entrées & Tapas': { icon: "🥗", color: "from-green-400 to-emerald-600" }
                     };
                     const theme = themes[cat] || { icon: "🍽️", color: "from-slate-400 to-slate-600" };
                     return <CategoryCard key={idx} title={cat} {...theme} />;

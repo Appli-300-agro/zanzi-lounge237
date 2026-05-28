@@ -9,9 +9,9 @@ const Contact = () => {
       {/* Header */}
       <section className="bg-primary py-20 text-white text-center">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-heading font-bold mb-4">Contactez-nous</h1>
+          <h1 className="text-4xl font-heading font-bold mb-4">Contactez Zanzi Lounge</h1>
           <p className="text-primary-light max-w-xl mx-auto">
-            Une question technique ? Un besoin urgent ? Notre équipe réagit sous 24h pour vous accompagner.
+            Une réservation ? Une commande pour emporter ? Notre équipe est à votre écoute pour vous offrir une expérience unique à Bastos.
           </p>
         </div>
       </section>
@@ -26,8 +26,8 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-bold text-secondary-dark mb-1">Téléphone & WhatsApp</h3>
-                <p className="text-sm text-secondary">+237 600 00 00 00</p>
-                <p className="text-xs text-primary font-medium mt-1">Lundi - Samedi : 8h00 - 18h00</p>
+                <p className="text-sm text-secondary">+237 690 58 20 49</p>
+                <p className="text-xs text-primary font-medium mt-1">Tous les jours : 11h00 - 02h00</p>
               </div>
             </div>
 
@@ -37,8 +37,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-bold text-secondary-dark mb-1">Email</h3>
-                <p className="text-sm text-secondary">contact@zanzilounge237.cm</p>
-                <p className="text-sm text-secondary">support@zanzilounge237.cm</p>
+                <p className="text-sm text-secondary">contact@zanzilounge.com</p>
               </div>
             </div>
 
@@ -49,8 +48,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-bold text-secondary-dark mb-1">Adresse</h3>
                 <p className="text-sm text-secondary leading-relaxed">
-                  Douala, Cameroun<br />
-                  Siège Social - Zone Industrielle
+                  Yaoundé, Bastos<br />
+                  Face Ambassade du Japon<br />
+                  Cameroun
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const Contact = () => {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="bg-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-2 border border-slate-200">
                 <MapPin className="text-primary w-5 h-5" />
-                <span className="font-bold text-sm">Retrouvez-nous à Douala</span>
+                <span className="font-bold text-sm">Retrouvez-nous à Bastos</span>
             </div>
         </div>
         <img 
