@@ -312,20 +312,22 @@ const Home = () => {
       <div ref={sectorsRef}>
         <AnimatedSection className="container mx-auto px-4 bg-slate-50/50 py-16 md:py-24 rounded-[3rem] md:rounded-[4rem] border border-slate-100">
             <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 space-y-4">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold text-secondary-dark tracking-tighter uppercase">Notre Carte</h2>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold text-secondary-dark tracking-tighter uppercase">Your all-in-one spot!</h2>
                 <div className="h-1 w-16 md:h-1.5 md:w-20 bg-primary mx-auto rounded-full" />
-                <p className="text-secondary text-lg md:text-xl font-light pt-4 px-4">L'art de la gastronomie et du service lounge à Yaoundé.</p>
+                <p className="text-secondary text-lg md:text-xl font-light pt-4 px-4">Découvrez toute l'offre Zanzibar Resort : Loisirs, Gastronomie et Détente à Bastos.</p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {CATEGORIES.map((cat, idx) => {
                     const themes = {
-                        'Spécialités Locales': { icon: "🥘", color: "from-orange-400 to-red-500" },
-                        'Grillades & Barbecue': { icon: "🔥", color: "from-red-400 to-rose-600" },
-                        'Cocktails & Mixologie': { icon: "🍸", color: "from-blue-400 to-indigo-600" },
-                        'Entrées & Tapas': { icon: "🥗", color: "from-green-400 to-emerald-600" }
+                        'Restaurant & Buffet': { icon: "🍱", color: "from-orange-400 to-red-500" },
+                        'Barbecue & Grill': { icon: "🔥", color: "from-red-500 to-rose-600" },
+                        'Piscine & Détente': { icon: "🏊‍♂️", color: "from-blue-400 to-indigo-600" },
+                        'Salle de Fête & Event': { icon: "🎊", color: "from-pink-400 to-rose-500" },
+                        'Billard & Divertissement': { icon: "🎱", color: "from-emerald-400 to-teal-600" },
+                        'Chambres & Confort': { icon: "🛌", color: "from-purple-400 to-violet-600" }
                     };
-                    const theme = themes[cat] || { icon: "🍽️", color: "from-slate-400 to-slate-600" };
+                    const theme = themes[cat] || { icon: "✨", color: "from-slate-400 to-slate-600" };
                     return <CategoryCard key={idx} title={cat} {...theme} />;
                 })}
             </div>

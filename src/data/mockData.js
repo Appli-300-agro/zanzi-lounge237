@@ -2,17 +2,21 @@
 // Images sélectionnées pour leur haute qualité et leur pertinence
 
 const CATEGORY_IMAGES = {
-  'Spécialités Locales': ['https://images.unsplash.com/photo-1544025162-d76694265947','https://images.unsplash.com/photo-1504674900247-0877df9cc836','https://images.unsplash.com/photo-1604329760661-e71dc83f8f26'],
-  'Grillades & Barbecue': ['https://images.unsplash.com/photo-1555939594-58d7cb561ad1','https://images.unsplash.com/photo-1529193591184-b1d58069ecdd','https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b'],
-  'Cocktails & Mixologie': ['https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b','https://images.unsplash.com/photo-1536935338213-d2c20e9fe9d6','https://images.unsplash.com/photo-1497515114629-f71d768fd07c'],
-  'Entrées & Tapas': ['https://images.unsplash.com/photo-1512621776951-a57141f2eefd','https://images.unsplash.com/photo-1540189549336-e6e99c3679fe','https://images.unsplash.com/photo-1546069901-ba9599a7e63c']
+  'Restaurant & Buffet': ['https://images.unsplash.com/photo-1504674900247-0877df9cc836','https://images.unsplash.com/photo-1555939594-58d7cb561ad1','https://images.unsplash.com/photo-1604329760661-e71dc83f8f26'],
+  'Barbecue & Grill': ['https://images.unsplash.com/photo-1555939594-58d7cb561ad1','https://images.unsplash.com/photo-1529193591184-b1d58069ecdd','https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b'],
+  'Piscine & Détente': ['https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7','https://images.unsplash.com/photo-1540541338287-41700207def5','https://images.unsplash.com/photo-1510812431401-41d2bd2722f3'],
+  'Salle de Fête & Event': ['https://images.unsplash.com/photo-1519167758481-83f550bb49b3','https://images.unsplash.com/photo-1470337458703-46ad1756a187','https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b'],
+  'Billard & Divertissement': ['https://images.unsplash.com/photo-1544145945-f90425340c7e','https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd','https://images.unsplash.com/photo-1497515114629-f71d768fd07c'],
+  'Chambres & Confort': ['https://images.unsplash.com/photo-1566073771259-6a8506099945','https://images.unsplash.com/photo-1520250497591-112f2f40a3f4','https://images.unsplash.com/photo-1582719478250-c89cae4df85b']
 };
 
 const DISH_NAMES = {
-  'Spécialités Locales': ['Ndolé Royal au Poisson Fumée', 'Eru & Garri Prestige', 'Sanga Traditionnel', 'Poisson Braisé du Jour', 'Poulet DG Royal'],
-  'Grillades & Barbecue': ['Brochettes de Bœuf épicées', 'Saucisses Grillées Maison', 'Ailerons de Poulet BBQ', 'Côtelettes de Porc Braisées'],
-  'Cocktails & Mixologie': ['Zanzi Signature Cocktail', 'Mojito Classique', 'Pina Colada Fraîche', 'Jus de Bissap Glacé'],
-  'Entrées & Tapas': ['Accras de Morue croustillants', 'Nems au Poulet', 'Salade de Saison', 'Planche de Charcuterie']
+  'Restaurant & Buffet': ['Ndolé Royal', 'Eru Prestige', 'Couscous Sauce Gombo', 'Riz Sauté Spécial', 'Buffet à Volonté'],
+  'Barbecue & Grill': ['Poisson Braisé du Jour', 'Poulet Braisé Maison', 'Brochettes de Bœuf', 'Saucisses Grillées', 'Ailerons BBQ'],
+  'Piscine & Détente': ['Accès Piscine Journée', 'Pass Famille Piscine', 'Cocktail Bord de l\'eau', 'Cabana VIP', 'Brunch Piscine'],
+  'Salle de Fête & Event': ['Location Salle Mariage', 'Espace Anniversaire', 'Salle de Conférence', 'Pack Décoration VIP', 'Service Traiteur Event'],
+  'Billard & Divertissement': ['Partie de Billard', 'Abonnement Club Billard', 'Table VIP Billard', 'Cocktail Games', 'Soirée Divertissement'],
+  'Chambres & Confort': ['Chambre Standard Confort', 'Suite Junior Prestige', 'Chambre Deluxe Vue Piscine', 'Appartement de Standing', 'Pack Escapade Romantique']
 };
 const sectorKeys = Object.keys(DISH_NAMES);
 
@@ -29,12 +33,12 @@ const generateProducts = () => {
     products.push({
       id: `prod-${i}`,
       name: productName,
-      description: `Vivez une explosion de saveurs avec notre ${dishBaseName}, une spécialité de la catégorie ${sector} préparée avec passion par le chef de Zanzi Lounge.`,
-      price: 3500 + (Math.floor(Math.random() * 20) * 500),
+      description: `Découvrez notre service ${dishBaseName}, une expérience de la catégorie ${sector} proposée par Zanzibar Resort à Bastos.`,
+      price: 5000 + (Math.floor(Math.random() * 50) * 1000),
       category: sector,
       imageUrl: `${imageUrl}?auto=format&fit=crop&q=80&w=800`,
-      stock: Math.floor(Math.random() * 50) + 10,
-      featured: i % 10 === 0
+      stock: Math.floor(Math.random() * 10) + 1,
+      featured: i % 15 === 0
     });
   }
   return products;
